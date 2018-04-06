@@ -1,16 +1,11 @@
-.g-heading {
-  &__header {
+.g-heading {  
     padding: 18px 0;
-    background-color: #1570a6;
-  }//header 
-
   &__title {
     font-size: 24px;
     line-height: 1.11;
     font-weight: normal;
     font-family: "Segoe UI Light", "Tahoma", sans-serif;
     a {
-      color: #fff;
       text-decoration: none;
       &:hover {
         text-decoration: underline;
@@ -18,14 +13,36 @@
     }
   }//title
 
+  &--center {
+    text-align: center;
+  }
+
+  &--nopadding {
+    padding: 0;
+  }
+
   &--orange {
+    color:  #ff6a00;
+  }
+
+  &--orange-bg {
+    background-color: #ff6a00;
+    a {      
+      color: #fff;
+    }
 
   }//orange
 
-  &--blue {
-
+  &--blue-bg {
+    background-color: #1570a6;
+    a {
+      color: #fff;
+    }
   }//blue
-  &--violet {
-    
+  &--violet-bg {
+    background-color: #68217a;
+    a {
+      color: #fff;
+    }
   }//violet
 }
