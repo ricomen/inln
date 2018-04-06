@@ -1,0 +1,57 @@
+footer.page-footer
+  .container
+    .page-footer__row
+      .page-footer__col
+        .footer-menu
+          ul.footer-menu__list
+            li.footer-menu__item.footer-menu__item--big
+              a(href='/company/contacts/') Мы на связи
+            li.footer-menu__item
+              a(href='http://facebook.com/inlnru/', target='_blank') Facebook
+            li.footer-menu__item
+              a(href='http://twitter.com/inln/', target='_blank') Twitter
+            li.footer-menu__item
+              a(href='http://instagram.com/inlnru/', target='_blank') Instagram
+            li.footer-menu__item
+              a(href='mailto:info@inln.ru') E-mail
+
+      .page-footer__col
+        .footer-menu
+          ul.footer-menu__list
+            li.footer-menu__item.footer-menu__item--big
+              a(href='<%= HttpUrlBuilder.SiteUrl %>portal/') Корпоративные порталы
+            li.footer-menu__item
+              a(href='/portal/online/') SharePoint Online
+            li.footer-menu__item
+              a(href='/portal/opportunity/business/') Автоматизация бизнес-процессов
+            li.footer-menu__item
+              a(href='/portal/opportunity/collaboration/') Совместная работа
+
+      .page-footer__col
+        .footer-menu
+          ul.footer-menu__list
+            li.footer-menu__item.footer-menu__item--big
+              a(href='<%= HttpUrlBuilder.SiteUrl %>soft/') Разработка ПО
+            li.footer-menu__item
+              a(href='/machine-learning/') Machine Learning
+            li.footer-menu__item
+              a(href='/ecm/') Электронный документооборот
+            li.footer-menu__item
+              a(href='/soft/technology/') Технологии разработки
+            li.footer-menu__item
+              a(href='/soft/azure/') Windows Azure
+
+      .page-footer__col
+        .footer-menu
+          ul.footer-menu__list
+            li.footer-menu__item.footer-menu__item--big
+              a(href='<%= HttpUrlBuilder.SiteUrl %>web/') Разработка сайтов
+            li.footer-menu__item
+              a(href='<%= HttpUrlBuilder.SiteUrl %>web/cms/') Система управления сайтом
+            li.footer-menu__item
+              a(href='<%= HttpUrlBuilder.SiteUrl %>web/support/') Сопровождение сайтов
+            li.footer-menu__item
+              a(href='<%= HttpUrlBuilder.SiteUrl %>web/facebook/') Facebook-приложения
+    .page-footer__bottom
+      .page-footer__logo.page-footer__logo--right
+        img(src="img/general/partner.png", alt="Логотип Инлайн")

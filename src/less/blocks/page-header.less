@@ -1,0 +1,37 @@
+.page-header {
+  position: relative;
+  min-height: 100px;
+  border-bottom: 3px solid #ddd;  
+  @media (max-width: 675px) {
+    min-height: 50px;
+  }
+  .container {    
+    .clearfix;    
+  }
+  &__logo {
+    float: left;
+    margin-top: 25px;
+    margin-right: 100px;    
+    @media @phone {
+      margin-right: 50px;
+    }
+    @media (max-width: 675px) {
+      margin-top: 12.5px;
+    }
+  }
+  &__nav {
+    float: left;
+    margin-top: 40px;
+    @media (max-width: 675px) {
+      float: right;  
+      margin-top: 12px;
+    }
+  }
+  &__contacts {
+    float: right;    
+    margin-top: 6px;
+    @media (max-width: 675px) {
+      display: none;
+    }
+  }
+}

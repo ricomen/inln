@@ -1,0 +1,58 @@
+.about {
+  padding-bottom: 20px;
+  color: #fff;
+  background-color: #00abec;
+  background-image: url('../img/general/index-about-bg.jpg');
+  background-position: bottom ;
+  background-repeat:  repeat-x;
+  overflow: hidden;
+  @media @phone {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  &__row {    
+    font-size: 0;
+  }
+  &__title {
+    font-family: "Segoe UI Light", "Tahoma", sans-serif;
+    font-size: 28px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  &__link {
+    color: #fff;
+  }
+  &__text {    
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 100px;
+    width: 60%;
+    box-sizing: border-box;
+    z-index: 5;
+    @media @phone {
+      width: 100%;
+    }
+    @media @tablet {
+      padding-right: 0;
+    }
+    p {
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 13px;
+      line-height: 1.53;
+    }
+  }
+
+  &__img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+    text-align: center;
+    box-sizing: border-box;
+    @media @phone {
+      display: none;
+    }
+  }
+}

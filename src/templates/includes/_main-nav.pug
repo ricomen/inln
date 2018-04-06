@@ -1,0 +1,57 @@
+include ../includes/_contacts
+mixin main-nav()
+  .main-nav
+    a.main-nav__toggle(href='javascript: void(0)')
+      span
+      span
+      span
+    ul.main-nav__list
+      li.main-nav__item
+        a(href='http://www.inln.ru/portal/')
+          | Услуги
+          i.icon-next
+          ul.main-nav__list.main-nav__list--sblvl
+            li.main-nav__item
+              a(href="http://www.inln.ru/portal/") Корпоративные порталы Microsoft SharePoint
+            li.main-nav__item
+              a(href="http://www.inln.ru/soft/") Разработка программного обеспечения
+            li.main-nav__item
+              a(href="http://www.inln.ru/machine-learning/") Машинное обучение и Deep Learning
+            li.main-nav__item
+              a(href="http://www.inln.ru/soft/blockchain/") Приложения с технологией Blockchain
+            li.main-nav__item
+              a(href="http://www.inln.ru/mobile/") Мобильные корпоративные решения
+            li.main-nav__item
+              a(href="http://www.inln.ru/ecm/") Электронный документооборот
+            li.main-nav__item
+              a(href="http://www.inln.ru/web/") Разработка Internet-сайтов
+            li.main-nav__item
+              a(href="http://www.inln.ru/portal/opportunity/collaboration/") Совместная работа
+            li.main-nav__item
+              a(href="http://www.inln.ru/soft/azure/") Разработка облачных приложений Windows Azure
+            li.main-nav__item
+              a(href="http://www.inln.ru/web/facebook/") Приложения для социальных сетей
+
+      li.main-nav__item
+        a(href='http://www.inln.ru/company/clients/')
+          | Клиенты
+          i.icon-next
+          ul.main-nav__list.main-nav__list--sblvl
+            li.main-nav__item
+              a(href="http://www.inln.ru/company/clients/") Наши клиенты
+            li.main-nav__item
+              a(href="http://www.inln.ru/company/clients/") Отзывы клиентов
+            li.main-nav__item
+              a(href="http://www.inln.ru/company/industries/") Отрасли
+
+      li.main-nav__item
+        a(href='')
+          | Компания
+          i.icon-next
+          ul.main-nav__list.main-nav__list--sblvl
+            li.main-nav__item
+              a(href="http://www.inln.ru/company/garanty/") Гарантии
+            li.main-nav__item
+              a(href="http://www.inln.ru/company/garanty/") Контакты
+      li.main-nav__item.main-nav__item--contacts      
+        +contacts

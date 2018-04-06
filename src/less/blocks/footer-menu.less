@@ -1,0 +1,37 @@
+.footer-menu {
+  &--mobile &__item{
+    display: none;
+  }
+  &--mobile &__item--big {
+    display: block;
+  }  
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__item {
+    font-size: 14px;
+    line-height: 26px;
+    @media @small {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 15px;
+    }
+    a {
+      color: #ff6a00;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &--big {
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 22px;
+      @media @small {
+        display: block;
+      }
+    }
+  }
+}
