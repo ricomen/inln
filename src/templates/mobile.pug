@@ -1,0 +1,12 @@
+extends layouts/layout
+include mixins/mixins
+
+block title 
+  title
+block body
+  body
+    include includes/_page-header    
+    include includes/_mobile
+    include includes/_page-footer  
+    script(src='js/common.js')
+    script(src='js/index.js')   

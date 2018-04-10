@@ -23,9 +23,9 @@ module.exports =  {
 
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-        name: 'common',
+        name: ['common'],
         filename: '[name].js',
-        minChunks: Infinity
+        minChunks: 2
     }),
     // uncomment in case of emergency code formatter need
     // new PrettierPlugin({
