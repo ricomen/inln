@@ -1,6 +1,74 @@
 .feedback-form {
-  padding: 10px 0 30px;
+  padding: 20px 0 30px;
   background-color: rgba(220, 220, 220, 0.5);
   border-top: 1px solid #d0d0d0;
   border-bottom: 1px solid #d0d0d0;
+
+  &__top {
+    // margin-bottom: 10px;
+    text-align: center;
+    &-text {
+      padding: 13px 0;
+      font-size: 14px;
+      font-weight: 100;
+    }
+  }
+
+
+  &__wrap {
+    font-size: 0;
+    text-align: center;
+    @media @tablet {
+      width: 50%;
+      margin: auto;
+    }
+    @media @small {
+      width: 100%;
+    }
+  }
+  &__input {
+    width: 220px;
+    max-width: 100%;
+    @media @tablet { 
+      width: 100%;     
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    input,
+    button {
+      font-size: 18px;
+      font-family: "Segoe UI Light";
+      padding: 12px 12px 10px;
+      text-align: left;
+      // box-sizing: border-box;
+    }
+    input {
+      width: 100%;
+      color: #7e8b9c;
+      font-size: 18px;
+      border: 1px solid #7e8b9c;
+      box-sizing: border-box;
+    }
+    button {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-right: 50px;
+      white-space: nowrap;
+    }
+    &--inline-b {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 4px;
+      font-size: 14px;
+      &:last-child {
+        margin-right: 0;
+      }
+      @media @tablet {
+        margin-right: 0;
+        display: block;        
+      }
+    }
+  }//input
 }

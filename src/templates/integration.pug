@@ -1,0 +1,12 @@
+extends layouts/layout
+include mixins/mixins
+
+block title 
+  title Разработка программного обеспечения (ПО). Внедрение и интеграция бизнес-приложений
+block body
+  body
+    include includes/_page-header    
+    include includes/_integration
+    include includes/_page-footer  
+    script(src='js/common.js')
+    script(src='js/soft.js')   

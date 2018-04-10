@@ -9,12 +9,16 @@ const PATHS = {
 module.exports =  {
   entry: {
     index: PATHS.src + '/js/index.js',
-    portal: PATHS.src + '/js/portal.js'
+    portal: PATHS.src + '/js/portal.js',
+    soft: PATHS.src + '/js/soft.js'
   },
   output: {
     path: PATHS.build + /js/,
     filename: '[name].js',
     library: '[name]'
+  },
+  devServer: {
+    overlay: true
   },
 
   plugins: [

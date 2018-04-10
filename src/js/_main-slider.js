@@ -5,7 +5,7 @@ var mainSlider = new Swiper('.main-slider',{
   autoplay: {
     delay: 4000
   },
-  effect: 'fade',
+  // effect: 'fade',
   slidesPerView: 1,
   lazy: {
     loadPrevNext: true
